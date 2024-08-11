@@ -1,0 +1,57 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    margin: 0;
+    font-size: 16pt;
+    padding: 0 10pt;
+  }
+}
+
+@mixin container {
+  background-color: #EEE;
+  margin: 5pt;
+  padding: 10pt;
+  border-radius: 10pt;
+  border: 2px solid #CCC;
+}
+
+.controls-container {
+ @include container;
+}
+
+.timer-container {
+  @include container;
+  border: 2px solid #777;
+
+  h1 {
+    font-size: 36pt;
+    margin: 0;
+  }
+  h2 {
+    color: grey;
+  }
+  h3 {
+    font-size: 48pt;
+  }
+}
+
+.timer-controls {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.low-time {
+  color: red;
+}
